@@ -352,21 +352,21 @@ int cntSubstring(string s1,string s2)
 }
 
 
-
-
-
-
 void solve(){
-    int n, m;
-    cin>>n>>m;
+    int a, b, c;
+    cin>>a>>b>>c;
 
-    if(m-1 >= n){
-        yes
+    if(a<b && b<c){
+        cout<<"STAIRS"<<endl;
         return;
     }
-    
-    no 
-    return;
+    else if(a<b && b>c){
+        cout<<"PEAK"<<endl;
+        return;
+    }
+    else{
+        cout<<"NONE"<<endl;
+    }
 }
 
 int main(){
