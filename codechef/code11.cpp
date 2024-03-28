@@ -8,25 +8,26 @@ using namespace std;
 
 
 void solve(){
-    int a, b;
-    cin>>a>>b;
+    int n, k, x;
+    cin>>n>>k>>x;
 
-    int ans = 0;
+    vector<int> dp(k);
 
-    if(a >= (b+10)){
-        cout<<ans<<endl;
+    dp[0] = 1;
+    dp[1] = 2;
+
+    for(int i=2; i<k; i++){
+        dp[i] = dp[i-1]+dp[i-2]+1;
+    }
+
+    if(dp[k-1] < x){
+        yes
         return;
     }
-
-
-    while(a < (b+10)){
-        a += 3;
-        ans++;
-        if(a >= (b+10)) break;
-        b += 2;
+    else{
+        no
+        return;
     }
-
-    cout<<ans<<endl;
 }
 
 int main(){

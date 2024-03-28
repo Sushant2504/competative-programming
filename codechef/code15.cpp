@@ -8,25 +8,7 @@ using namespace std;
 
 
 void solve(){
-    int a, b;
-    cin>>a>>b;
 
-    int ans = 0;
-
-    if(a >= (b+10)){
-        cout<<ans<<endl;
-        return;
-    }
-
-
-    while(a < (b+10)){
-        a += 3;
-        ans++;
-        if(a >= (b+10)) break;
-        b += 2;
-    }
-
-    cout<<ans<<endl;
 }
 
 int main(){
