@@ -353,19 +353,38 @@ int cntSubstring(string s1,string s2)
 
 
 void solve(){
-    int a, b, c;
-    cin>>a>>b>>c;
+    int n;
+    cin>>n;
+    string s = "#";
+    string t = ".";
+    int size = 2*n;
+    vector<vector<string>> ans(size, vector<string>(size));
+    bool f = true;
+    for(int i=0; i<2*n; i+=2){
+         f = !f;
+        for(int j=0; j<2*n; j+=2){
+             f = !f;
+             if(f){
+                ans[i][j] = "#";
+                ans[i][j+1] = "#";
+                ans[i+1][j] = "#";
+                ans[i+1][j+1] = "#";
+             }
+             else{
+                ans[i][j] = ".";
+                ans[i][j+1] = ".";
+                ans[i+1][j] = ".";
+                ans[i+1][j+1] = ".";
+             }
+        }
+        if(n%2!=0) f=!f;
 
-    if(a<b && b<c){
-        cout<<"STAIR"<<endl;
-        return;
     }
-    else if(a<b && b>c){
-        cout<<"PEAK"<<endl;
-        return;
-    }
-    else{
-        cout<<"NONE"<<endl;
+
+    for(int i=0; i<2*n; i++){
+        for(int j=0; j<2*n; j++){
+            cout<<ans[i][j];
+        }cout<<endl;
     }
 }
 
