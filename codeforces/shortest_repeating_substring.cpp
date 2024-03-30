@@ -351,43 +351,18 @@ int cntSubstring(string s1,string s2)
    return ans;
 }
 
-vector<int> binary_decimals;
-int MAX = 100'007;
-
-bool ok(int n){
-    if(n==1) return true;
-    bool ans = false;
-    for(int i:binary_decimals){
-        if(n%i == 0){
-           ans |= ok(n/i);
-        }
-    }
-
-    return ans;
-}
 
 void solve(){
-    int n;
+    long long n;
     cin>>n;
-    cout<<(ok(n)) ? "YES\n" : "NO\n";
 
+    string s;
+    cin>>s;
+
+    
 }
 
 int main(){
-    for(int i=2; i<MAX; i++){
-       int curr = i;
-       bool bad = false;
-       while(curr){
-          if(curr%10 > 1){
-             bad = true;
-             break;
-          }
-       }
-       if(!bad){
-          binary_decimals.push_back(i);
-       }
-    }
-
     int t;
     cin>>t;
     while(t--){
