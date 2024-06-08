@@ -8,7 +8,26 @@ using namespace std;
 
 void solve(){
     
+     int n, m;
+     cin>>n>>m;
+
+     if(m>n){
+        cout<<"NO"<<endl;
+        return;
+     }
+
+
+     int temp = n-m;
+     int ans = temp + m;
+
+     if(n==ans && temp%2==0){
+        cout<<"YES"<<endl;
+        return;
+     }
+
+     cout<<"NO"<<endl;
      
+
 
 }
 
