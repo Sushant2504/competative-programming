@@ -8,16 +8,19 @@ using namespace std;
 
 void solve(){
       
+     int x;
+     cin>>x;
 
+     int ans = x/2;
+
+     if(x%2!=0) ans++;
+
+     cout<<ans<<endl;
 
 
 }
 
 
 int main(){
-    int t;
-    cin>>t;
-    while(t--){
-        solve();
-    }
+    solve();
 }

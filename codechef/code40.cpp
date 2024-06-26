@@ -7,21 +7,28 @@ using namespace std;
 
 
 void solve(){
-      int n, m;
-      cin>>n>>m;
+      
+    int n;
+    cin>>n;
 
+    vector<int> a(n);
 
-      int temp = m%n;
-      int temp1 = n-temp;
-      int div = m/n;
+    ff(n) cin>>a[i];
 
-      int ans = min(temp, temp1);
+    unordered_map<int, int> m;
 
-      if(div==0){
-          cout<<temp1<<endl;
-      }else{
-          cout<<ans<<endl;
-      }
+    for(int i=0; i<n; i++){
+        m[a[i]]++;
+    }
+
+    if(m[a[0]]==0 || m[a[n-1]] > 1 || m[a[n-1]] == 0){
+        no
+        return;
+    }
+
+    yes
+    return;
+
 }
 
 

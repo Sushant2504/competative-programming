@@ -1,0 +1,1 @@
+{"name":"Local: code35","url":"c:\\Users\\hp\\Desktop\\competative programming\\codechef\\code35.cpp","tests":[{"id":1718809581108,"input":"3\n1\n2\n3","output":"1\n1\n1 2\n2 1\n1 2 3\n3 1 2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hp\\Desktop\\competative programming\\codechef\\code35.cpp","group":"local","local":true}

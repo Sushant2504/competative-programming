@@ -7,21 +7,10 @@ using namespace std;
 
 
 void solve(){
-      int n, m;
-      cin>>n>>m;
+      
 
 
-      int temp = m%n;
-      int temp1 = n-temp;
-      int div = m/n;
 
-      int ans = min(temp, temp1);
-
-      if(div==0){
-          cout<<temp1<<endl;
-      }else{
-          cout<<ans<<endl;
-      }
 }
 
 

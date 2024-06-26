@@ -7,8 +7,13 @@ using namespace std;
 
 
 void solve(){
-    
       
+    int n;
+    cin>>n;
+    int ans = n/12;
+
+    cout<<ans<<endl;
+
 
 }
 
@@ -16,7 +21,5 @@ void solve(){
 int main(){
     int t;
     cin>>t;
-    while(t--){
-        solve();
-    }
+    solve();
 }
