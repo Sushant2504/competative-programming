@@ -8,10 +8,14 @@ using namespace std;
 
 void solve(){
       
-     
+     ll a , b;
+     cin>>a>>b;
 
-     
+     ll c = abs(a);
 
+     if(-(c+1) <= (b-c)) yes
+     else no
+    
 }
 
 
