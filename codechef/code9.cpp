@@ -6,7 +6,6 @@ using namespace std;
 #define ff1(n) for(int i=1; i<n; i++)
 
 
-
 void solve(){
     int a, b;
     cin>>a>>b;
