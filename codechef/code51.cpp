@@ -8,20 +8,15 @@ using namespace std;
 
 void solve(){
       
-     int x, y, z;
-     cin>>x>>y>>z;
+     int n, x;
+     cin>>n>>x;
 
-     int sum = x*y;
+     vector<int> v(n);
 
-     int diff = z - sum;
-
-     int ans = diff/x;
-
-
-     cout<<ans<<endl;
-      
+     ff(n) cin>>v[i];
      
-
+     
+     
 }
 
 

@@ -8,18 +8,8 @@ using namespace std;
 
 void solve(){
       
-     int x, y, z;
-     cin>>x>>y>>z;
+     
 
-     int sum = x*y;
-
-     int diff = z - sum;
-
-     int ans = diff/x;
-
-
-     cout<<ans<<endl;
-      
      
 
 }
