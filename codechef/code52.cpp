@@ -6,7 +6,7 @@ using namespace std;
 #define ff1(n) for(int i=1; i<n; i++)
 #define ll long long
 
-void solve(){
+void solve(){  
       
     int n;
     cin>>n;
