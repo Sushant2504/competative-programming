@@ -8,10 +8,29 @@ using namespace std;
 
 void solve(){
       
-     
+     int n, d;
+     cin>>n>>d;
+
+     vector<int> a(n);
+     ff(n) cin>>a[i];
+     int ans = 0;
+     bool f = false;
+
+
+     for(int i=0; i<n; i++){
+         if(a[i] > d){
+             f = true;
+             ans++;
+         }
+
+         if(f && a[i] <= d){
+             f = false;
+             ans++;
+         }
+     }
 
      
-
+     cout<<ans<<endl;
 }
 
 
