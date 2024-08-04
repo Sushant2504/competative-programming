@@ -6,16 +6,32 @@ using namespace std;
 #define ff1(n) for(int i=1; i<n; i++)
 #define ll long long
 
+
+bool issorted(vector<ll>& v){
+
+    for(int i=1; i<v.size(); i++){
+        if(v[i]<v[i-1]) return false;
+    }
+    return true;
+}
+
 void solve(){
-      int n;
-      cin>>n;
+    
+    ll n;
+    cin>>n;
 
+    vector<ll> v(n);
 
-      cout<<n<<endl;
-     
+    ff(n) cin>>v[i];
 
-     
+    if(issorted(v)){
+        cout<<0<<endl;
+        return;
+    } 
 
+    
+
+    cout<<2<<endl;
 }
 
 

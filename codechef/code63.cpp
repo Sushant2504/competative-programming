@@ -7,15 +7,8 @@ using namespace std;
 #define ll long long
 
 void solve(){
-      int n;
-      cin>>n;
-
-
-      cout<<n<<endl;
      
-
      
-
 }
 
 
