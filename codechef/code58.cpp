@@ -8,17 +8,30 @@ using namespace std;
 
 void solve(){
       
-     
+     int n, x;
+     cin>>n>>x;
 
-     
+     int sum = 0;
 
+     vector<int> v(n);
+
+     ff(n) cin>>v[i];
+
+     ff(n) sum += v[i];
+
+     if(sum > x){
+          int temp = sum/n;
+          cout<<temp<<endl;
+          return;
+     }else{
+        cout<<"infinite"<<endl;
+        return;
+     }
+     
 }
 
 
 int main(){
-    int t;
-    cin>>t;
-    while(t--){
-        solve();
-    }
-}
+    solve();
+
+}    

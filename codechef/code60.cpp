@@ -7,15 +7,23 @@ using namespace std;
 #define ll long long
 
 void solve(){
-      
      ll n;
      cin>>n;
 
+     ll l = -1;
+     ll r = 1e9;
 
+     while(r-l > 1){
+         ll mid = l + (l-r)/2;
+         if(mid * mid >= n){
+            r = mid;
+         }else{
+            l = mid;
+         }
+     }
+
+     cout<<(r-l)<<endl;
      
-
-     
-
 }
 
 

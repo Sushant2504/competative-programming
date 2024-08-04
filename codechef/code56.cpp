@@ -8,17 +8,29 @@ using namespace std;
 
 void solve(){
       
-     
+    ll y;
+    cin>>y;
 
+
+    if(y%4!=0){
+        cout<<365<<endl;
+        return;
+    }
+    else if(y%4==0 && y%100!=0){
+        cout<<366<<endl;
+        return;
+    }else if(y%100==0 && y%400!=0){
+        cout<<365<<endl;
+        return;
+    }else if(y%400==0){
+        cout<<366<<endl;
+        return;
+    }
      
 
 }
 
 
 int main(){
-    int t;
-    cin>>t;
-    while(t--){
-        solve();
-    }
+   solve();
 }

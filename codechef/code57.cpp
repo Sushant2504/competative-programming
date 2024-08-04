@@ -8,17 +8,24 @@ using namespace std;
 
 void solve(){
       
-     
+    int n;
+    cin>>n;
+    unordered_map<int, int> m;
 
-     
+    vector<ll> v(n);
+
+    ff(n) cin>>v[i];
+
+    ff(n) m[v[i]] = i;
+
+
+    sort(v.begin(), v.end(), greater<int>());
+
+    cout<<m[v[1]]+1<<endl;
 
 }
 
 
 int main(){
-    int t;
-    cin>>t;
-    while(t--){
-        solve();
-    }
+    solve();
 }
