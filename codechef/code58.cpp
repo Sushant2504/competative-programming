@@ -8,30 +8,44 @@ using namespace std;
 
 void solve(){
       
-     int n, x;
-     cin>>n>>x;
+     ll n;
+     cin>>n;
 
-     int sum = 0;
+     vector<ll> a(n);
 
-     vector<int> v(n);
+     ff(n) cin>>a[i];
 
-     ff(n) cin>>v[i];
-
-     ff(n) sum += v[i];
-
-     if(sum > x){
-          int temp = sum/n;
-          cout<<temp<<endl;
-          return;
-     }else{
-        cout<<"infinite"<<endl;
-        return;
+     string s;
+     cin>>s;
+     vector<ll> pre_sum(n+1);
+     pre_sum[1] = a[0];
+     for(int i=1; i<n; i++){
+          pre_sum[i+1] = pre_sum[i] + a[i];
      }
-     
+     ll ans = 0;
+
+     ll l = 0, r = n-1;
+
+     while(l<=r){
+          if(s[l]=='L' && s[l]=='R'){
+               ans += pre_sum[r+1] + pre_sum[l];
+               l++;
+               r--;
+          }
+          else if(s[l]=='L') r--;
+          else l++;
+     }
+    
+
+     cout<<ans<<endl;
 }
 
 
 int main(){
-    solve();
+    int t;
+    cin>>t;
+    while(t--){
+        solve();
+    }
 
 }    

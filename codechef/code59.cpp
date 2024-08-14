@@ -8,12 +8,26 @@ using namespace std;
 
 void solve(){
       
-     ll n;
+     int n;
      cin>>n;
 
+     vector<int> a(n);
 
-     
+     ff(n) cin>>a[i];
 
+     vector<bool> vis(n, false);
+ 
+     vis[a[0]] = 1;
+    
+    for(int i=1; i<n; i++){
+         if(!vis[a[i-1]] && !vis[a[i+1]]){
+              no
+              return;
+         }
+    }
+
+
+    yes
      
 
 }

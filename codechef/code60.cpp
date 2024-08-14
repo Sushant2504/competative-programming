@@ -7,22 +7,43 @@ using namespace std;
 #define ll long long
 
 void solve(){
-     ll n;
+     int n, m;
      cin>>n;
 
-     ll l = -1;
-     ll r = 1e9;
+     vector<int> a(n);
 
-     while(r-l > 1){
-         ll mid = l + (l-r)/2;
-         if(mid * mid >= n){
-            r = mid;
-         }else{
-            l = mid;
-         }
+     ff(n) cin>>a[i];
+     unordered_map<int, char> map;
+
+     for(int i=0; i<n; i++){
+         map[a[i]] = '#';
      }
 
-     cout<<(r-l)<<endl;
+     cin>>m;
+
+     while(m--){
+        string s;
+        cin>>s;
+
+         if(s.length()!=n){
+        no
+        return;
+        }
+
+        
+        map[a[0]] = s[0];
+
+        for(int i=1; i<n; i++){
+            if(map[a[i]]!='#'){
+                 no
+                 return;
+            }
+        }
+
+        yes
+
+
+     }
      
 }
 
